@@ -3,87 +3,87 @@
 @tailwind components;
 @tailwind utilities;
 
-/* AfricaShop Design System - Couleurs inspirées de l'Afrique */
+/* AfricaShop Design System - Palette bleue inspirée de l'Afrique */
 
 @layer base {
   :root {
-    --background: 28 100% 98%; /* Crème très clair */
-    --foreground: 30 40% 15%; /* Brun foncé */
+    --background: 210 100% 98%; /* Bleu très clair */
+    --foreground: 220 40% 15%; /* Bleu foncé */
 
     --card: 0 0% 100%;
-    --card-foreground: 30 40% 15%;
+    --card-foreground: 220 40% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 30 40% 15%;
+    --popover-foreground: 220 40% 15%;
 
-    --primary: 22 95% 63%; /* Orange africain */
+    --primary: 217 91% 60%; /* Bleu principal */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 28 50% 85%; /* Crème */
-    --secondary-foreground: 30 40% 20%;
+    --secondary: 210 50% 92%; /* Bleu clair */
+    --secondary-foreground: 220 40% 20%;
 
-    --muted: 28 30% 92%;
-    --muted-foreground: 30 20% 40%;
+    --muted: 210 30% 94%;
+    --muted-foreground: 220 20% 40%;
 
-    --accent: 51 100% 50%; /* Or */
-    --accent-foreground: 30 40% 15%;
+    --accent: 200 98% 39%; /* Bleu sarcelle */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 28 20% 88%;
-    --input: 28 20% 88%;
-    --ring: 22 95% 63%;
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 217 91% 60%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 28 100% 98%;
-    --sidebar-foreground: 30 40% 15%;
-    --sidebar-primary: 22 95% 63%;
+    --sidebar-background: 210 100% 98%;
+    --sidebar-foreground: 220 40% 15%;
+    --sidebar-primary: 217 91% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 28 50% 85%;
-    --sidebar-accent-foreground: 30 40% 20%;
-    --sidebar-border: 28 20% 88%;
-    --sidebar-ring: 22 95% 63%;
+    --sidebar-accent: 210 50% 92%;
+    --sidebar-accent-foreground: 220 40% 20%;
+    --sidebar-border: 210 20% 88%;
+    --sidebar-ring: 217 91% 60%;
   }
 
   .dark {
-    --background: 30 20% 8%;
-    --foreground: 28 50% 95%;
+    --background: 220 20% 8%;
+    --foreground: 210 50% 95%;
 
-    --card: 30 15% 12%;
-    --card-foreground: 28 50% 95%;
+    --card: 220 15% 12%;
+    --card-foreground: 210 50% 95%;
 
-    --popover: 30 15% 12%;
-    --popover-foreground: 28 50% 95%;
+    --popover: 220 15% 12%;
+    --popover-foreground: 210 50% 95%;
 
-    --primary: 22 95% 63%;
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 10% 18%;
-    --secondary-foreground: 28 50% 85%;
+    --secondary: 220 10% 18%;
+    --secondary-foreground: 210 50% 85%;
 
-    --muted: 30 10% 15%;
-    --muted-foreground: 28 30% 65%;
+    --muted: 220 10% 15%;
+    --muted-foreground: 210 30% 65%;
 
-    --accent: 51 100% 50%;
-    --accent-foreground: 30 20% 8%;
+    --accent: 200 98% 39%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 10% 20%;
-    --input: 30 10% 20%;
-    --ring: 22 95% 63%;
+    --border: 220 10% 20%;
+    --input: 220 10% 20%;
+    --ring: 217 91% 60%;
 
-    --sidebar-background: 30 20% 8%;
-    --sidebar-foreground: 28 50% 95%;
-    --sidebar-primary: 22 95% 63%;
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 210 50% 95%;
+    --sidebar-primary: 217 91% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 30 10% 18%;
-    --sidebar-accent-foreground: 28 50% 85%;
-    --sidebar-border: 30 10% 20%;
-    --sidebar-ring: 22 95% 63%;
+    --sidebar-accent: 220 10% 18%;
+    --sidebar-accent-foreground: 210 50% 85%;
+    --sidebar-border: 220 10% 20%;
+    --sidebar-ring: 217 91% 60%;
   }
 }
 
@@ -98,27 +98,27 @@
   }
 }
 
-/* Motifs géométriques africains subtils */
+/* Motifs géométriques africains subtils - Version bleue */
 .african-pattern {
   background-image: 
-    linear-gradient(45deg, transparent 65%, rgba(255, 140, 66, 0.1) 66%, rgba(255, 140, 66, 0.1) 69%, transparent 70%),
-    linear-gradient(-45deg, transparent 65%, rgba(255, 215, 0, 0.05) 66%, rgba(255, 215, 0, 0.05) 69%, transparent 70%);
+    linear-gradient(45deg, transparent 65%, rgba(30, 64, 175, 0.1) 66%, rgba(30, 64, 175, 0.1) 69%, transparent 70%),
+    linear-gradient(-45deg, transparent 65%, rgba(14, 165, 233, 0.05) 66%, rgba(14, 165, 233, 0.05) 69%, transparent 70%);
   background-size: 20px 20px;
 }
 
-/* Gradient africain */
+/* Gradient africain - Version bleue */
 .african-gradient {
-  background: linear-gradient(135deg, #FF8C42 0%, #D2691E 50%, #FFD700 100%);
+  background: linear-gradient(135deg, #1E40AF 0%, #0EA5E9 50%, #0D9488 100%);
 }
 
-/* Animation de scintillement pour l'or */
+/* Animation de scintillement pour l'accent bleu */
 @keyframes shimmer {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
 }
 
 .gold-shimmer {
-  background: linear-gradient(90deg, #FFD700 25%, #FFA500 50%, #FFD700 75%);
+  background: linear-gradient(90deg, #0EA5E9 25%, #1E40AF 50%, #0D9488 75%);
   background-size: 200% 100%;
   animation: shimmer 3s infinite;
 }

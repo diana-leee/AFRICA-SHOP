@@ -63,14 +63,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// AfricaShop custom colors
+				// AfricaShop custom colors - Version bleue
 				african: {
-					orange: '#FF8C42',
-					terracotta: '#D2691E',
-					gold: '#FFD700',
-					brown: '#8B4513',
-					cream: '#F5F5DC',
-					green: '#228B22'
+					blue: '#1E40AF',
+					azure: '#0EA5E9',
+					navy: '#1E3A8A',
+					teal: '#0D9488',
+					lightblue: '#E0F2FE',
+					indigo: '#4F46E5'
 				}
 			},
 			borderRadius: {
