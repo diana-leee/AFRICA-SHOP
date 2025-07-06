@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="container relative z-10 text-center space-y-6 animate-fade-in">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
           <span className="text-primary">Africa</span>
-          <span className="text-accent gold-shimmer bg-clip-text text-transparent">Shop</span>
+          <span className="text-accent">Shop</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">

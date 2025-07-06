@@ -2,7 +2,7 @@
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart, Shirt, Palette, Leaf } from 'lucide-react';
 
 interface Product {
   id: number;
@@ -19,14 +19,26 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
+  // Fonction pour obtenir l'icône selon la catégorie
+  const getCategoryIcon = (category: string) => {
+    switch (category.toLowerCase()) {
+      case 'vêtements':
+        return Shirt;
+      case 'artisanat':
+        return Palette;
+      case 'cosmétiques':
+        return Leaf;
+      default:
+        return Palette;
+    }
+  };
+
+  const IconComponent = getCategoryIcon(product.category);
+
   return (
     <Card className="group hover:shadow-lg transition-all duration-300 animate-slide-in">
-      <div className="relative overflow-hidden rounded-t-lg">
-        <img 
-          src={product.image} 
-          alt={product.name}
-          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-        />
+      <div className="relative overflow-hidden rounded-t-lg bg-gradient-to-br from-primary/10 to-accent/10 h-48 flex items-center justify-center">
+        <IconComponent size={80} className="text-primary group-hover:scale-110 transition-transform duration-300" />
         <Badge className="absolute top-2 left-2 bg-primary text-white">
           {product.category}
         </Badge>
